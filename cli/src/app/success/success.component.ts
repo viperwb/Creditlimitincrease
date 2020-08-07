@@ -19,12 +19,10 @@ export class SuccessComponent implements OnInit {
 
   ngOnInit(): void {
     this.activateInfo.params.subscribe((res) => {
-      console.log(res);
       this.currentcard = res.id;
       this.increastto = res.id1;
     });
     axios.get('assets/mockdata.json').then(res => {
-      console.log(res.data);
       this.cards = res.data;
       this.load = true;
     });

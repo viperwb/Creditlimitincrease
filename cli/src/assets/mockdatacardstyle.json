@@ -1,0 +1,22 @@
+[
+    {
+      "cardid": 1,
+      "style": "Visa"
+    },
+    {
+      "cardid": 2,
+      "style": "Master"
+    },
+    {
+      "cardid": 3,
+      "style": "Unionpay"
+    },
+    {
+      "cardid": 4,
+      "style": "Visa"
+    },
+    {
+      "cardid": 5,
+      "style": "Master"
+    }
+  ]
