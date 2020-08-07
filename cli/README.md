@@ -1,3 +1,8 @@
+# Guide
+
+直接ng serve运行即可，mock的json数据位于assets中。
+项目分为2个页面组件 home 和 success。
+
 # Cli
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.

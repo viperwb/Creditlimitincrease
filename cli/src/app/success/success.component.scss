@@ -2,6 +2,7 @@
     font-size: 1.5rem;
     line-height: 3rem;
     text-align: center;
+    color: rgb(109, 103, 211);
 }
 .img {
     width: 100%;
@@ -9,5 +10,19 @@
     padding: 0 10%;
     img {
         width: 100%;
+    }
+}
+div {
+    i {
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+
+.row {
+    color: rgb(109, 103, 211);
+    display: flex;
+    span {
+        width: 50%;
     }
 }

@@ -3,15 +3,14 @@
 
 </div>
 <p class="successtext">Request Submit Successfully!</p>
-<div *ngIf="load" >
-<div>
-    <span>Transaction Card</span> <i>{{ cards[currentcard - 1].no }}</i>
-</div>
-
-<div>
-    <span>Increase Limit to</span> <i>{{ increastto }}</i>
-</div>
-<div>
-    <span>Request Submit Date</span> <i *ngIf="date" >{{ date }}</i>
-</div>
+<div *ngIf="load">
+    <div class="row">
+        <span>Transaction Card</span> <i>{{ cards[currentcard - 1].no }}</i>
+    </div>
+    <div class="row">
+        <span>Increase Limit to</span> <i>{{ increastto }}</i>
+    </div>
+    <div class="row">
+        <span>Request Submit Date</span> <i *ngIf="date">{{ date | date }}</i>
+    </div>
 </div>

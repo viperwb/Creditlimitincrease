@@ -1,0 +1,49 @@
+.dropdown {
+    float: right;
+}
+
+.available-limit {
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 15rem;
+    width: 15rem;
+    line-height: 2.6rem;
+    font-size: 1.3rem;
+    color: rgb(109, 103, 211);
+    box-sizing: border-box;
+    padding: 2rem;
+    padding-top: 4rem;
+    margin-top: 20%;
+    text-align: center;
+    border: 1rem solid rgb(109, 103, 211);
+    border-radius: 50%;
+}
+.firstrow {
+    margin-top: 20rem;
+}
+.row {
+    display: flex;
+
+    .title {
+        width: 30%;
+    }
+    .numbers {
+        line-height: 4rem;
+        font-size: 1rem;
+        text-align: right;
+    }
+}
+
+.buttonarea {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    button {
+        font-size: 1.5rem;
+    }
+}

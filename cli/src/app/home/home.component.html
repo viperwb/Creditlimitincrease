@@ -1,21 +1,36 @@
-
-<mat-form-field appearance="fill" *ngIf="load" >
-    <mat-select (selectionChange) = "onSelectChange($event)">
-      <mat-option value="1">Credit Card 1</mat-option>
-      <mat-option value="2">Credit Card 2 </mat-option>
-      <mat-option value="3">Credit Card 3</mat-option>
+<div class="dropdown">
+  <mat-form-field appearance="flat" *ngIf="load">
+    <mat-select (selectionChange)="onSelectChange($event)" [placeholder]="cardInfo.cardid">
+      <mat-option *ngFor="let item of cardInfo" [value]="item.cardid">
+        Credit Card {{ item.cardid }}
+      </mat-option>
     </mat-select>
-</mat-form-field>
-
-<div>Available Limit</div>
-<div *ngIf="showNow" >{{ showNow.limit }}</div>
-<div>Maximum Increase Amount </div>
-<div *ngIf="showNow" >{{ showNow.max }}</div>
-<div>Increase Limit To </div>
-<mat-form-field class="example-form-field">
+  </mat-form-field>
+  <div *ngIf="showNow">
+    {{ showNow.no }}
+  </div>
+</div>
+<div class="available-limit">
+  <div>Available Limit</div>
+  <div *ngIf="showNow">{{ showNow.limit }}</div>
+</div>
+<br>
+<div class="row firstrow">
+  <div class="title">Maximum Increase Amount </div>
+  <div *ngIf="showNow" class="numbers">$ {{ showNow.max }}</div>
+</div>
+<br>
+<div class="row">
+  <div class="title">Increase Limit To </div>
+  <mat-form-field class="example-form-field">
     <span matPrefix>$ &nbsp;</span>
     <input matInput type="text" [(ngModel)]="inputvalue">
-</mat-form-field>
-{{ inputvalue }}
+  </mat-form-field>
+</div>
+
+
 <br>
-<button mat-button color="primary" (click) = "submit($event)">Submit</button>
+<div class="buttonarea">
+
+  <button mat-button color="primary" (click)="submit($event)"> Submit </button>
+</div>
