@@ -1,7 +1,20 @@
 # Guide
 
-直接ng serve运行即可，mock的json数据位于assets中。
-项目分为2个页面组件 home 和 success。
+直接ng serve运行即可，mock的json数据位于assets中。项目分为3个页面组件 home，success和error。
+
+# Change Log
+
+## Version 1.1.0
+
+- 增加blur后的货币格式化。
+- 增加首页显示货币的格式化。
+- 增加forkJion处理多个api访问请求的反馈情况。
+- 增加下拉菜单默认显示第一张卡。
+- 改变submit button样式。
+
+## Version 1.0.0
+
+- 项目建立。
 
 # Cli
 

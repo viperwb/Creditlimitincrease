@@ -5,12 +5,12 @@
 <p class="successtext">Request Submit Successfully!</p>
 <div *ngIf="load">
     <div class="row">
-        <span>Transaction Card</span> <i>{{ cards[currentcard - 1].no }}</i>
+        <span>Transaction Card</span> <i>{{ currentFormatedCardNumber }}</i>
     </div>
     <div class="row">
-        <span>Increase Limit to</span> <i>{{ increastto }}</i>
+        <span>Increase Limit to</span> <i>$ {{ increastto }}.00</i>
     </div>
     <div class="row">
-        <span>Request Submit Date</span> <i *ngIf="date">{{ date | date }}</i>
+        <span>Request Submit Date</span> <i *ngIf="date">{{ date }}</i>
     </div>
 </div>
